@@ -16,5 +16,5 @@ var printOneReturnAnother = function(a) {
   }
 };
 
-printOneReturnAnother([]);
+printOneReturnAnother([1,2]);
 

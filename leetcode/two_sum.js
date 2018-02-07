@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 let arr = [-4, 2, 1, 9, 7, 5];
     target = 3;
 

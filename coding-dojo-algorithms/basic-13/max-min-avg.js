@@ -23,4 +23,4 @@ var maxMinAvg = function(a) {
   return newArr;
 };
 
-maxMinAvg(a);
+console.log(maxMinAvg(a));

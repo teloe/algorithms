@@ -8,7 +8,9 @@
 // using while loop
 
 function fibonacci(num){
-  var a = 1, b = 0, temp;
+  var a = 1 
+      b = 0 
+      temp;
 
   while (num >= 0){
     temp = a;

@@ -18,12 +18,12 @@ reverseArray([]);
 
 
 function reverse (arr) {
-    for (var i = 0; i < arr.length - 1; i++) {
-        var temp = arr[i];
-        arr[i] = arr[arr.length - 1 - i];
-        arr[arr.length - 1 - i] = temp; 
-    }
-    return arr;
+  for (var i = 0; i < arr.length - 1; i++) {
+    var temp = arr[i];
+    arr[i] = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = temp; 
+  }
+  return arr;
 }
 console.log(reverse([1,2,3,4,5,6]));
 

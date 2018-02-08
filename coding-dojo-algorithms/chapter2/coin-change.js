@@ -22,40 +22,54 @@
 
 // var totalCents = 20;
 
-// var coinChange = function(totalCents) {
-//   var quarterCount = 0;
-//   var dimeCount = 0;
-//   var nickelCount = 0;
-//   var pennyCount = 0;
-//   var remainder = 0;
-//   if (totalCents < 25) {
-//     console.log(quarterCount);
-//   } else {
-//     quarterCount = Math.floor(totalCents / 25);
-//     remainder = totalCents / 25 - quarterCount;
-//   }
-//   if (totalCents < 10) {
-//     console.log(dimeCount);
-//   } else {
-//     dimeCount = Math.floor(totalCents / 10);
-//     remainder = totalCents / 10 - dimeCount;
-//   }
-//   if (totalCents < 5) {
-//     console.log(dimeCount);
-//   } else {
-//     nickelCount = Math.floor(totalCents / 5);
-//     remainder = totalCents / 5 - nickelCount;
-//   }
-//   if (totalCents == 1) {
-//     console.log(pennyCount);
-//   } else {
-//     pennyCount = Math.floor(totalCents / 1);
-//     remainder = totalCents / 1 - pennyCount;
-//   }
-//   console.log(quarterCount, dimeCount, nickelCount, pennyCount);
-// };
+var coinChange = function(totalCents) {
+  var quarterCount = 0;
+  var dimeCount = 0;
+  var nickelCount = 0;
+  var pennyCount = 0;
+  var remainder = 0;
+  if (totalCents < 25) {
+    console.log(quarterCount);
+  } else {
+    quarterCount = Math.floor(totalCents / 25);
+    remainder = totalCents / 25 - quarterCount;
+  }
+  if (totalCents < 10) {
+    console.log(dimeCount);
+  } else {
+    dimeCount = Math.floor(totalCents / 10);
+    remainder = totalCents / 10 - dimeCount;
+  }
+  if (totalCents < 5) {
+    console.log(dimeCount);
+  } else {
+    nickelCount = Math.floor(totalCents / 5);
+    remainder = totalCents / 5 - nickelCount;
+  }
+  if (totalCents == 1) {
+    console.log(pennyCount);
+  } else {
+    pennyCount = Math.floor(totalCents / 1);
+    remainder = totalCents / 1 - pennyCount;
+  }
+  console.log(quarterCount, dimeCount, nickelCount, pennyCount);
+};
 
-// coinChange(totalCents);
+coinChange(totalCents);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var total = 80;

@@ -20,18 +20,37 @@
 // console.log(arr);
 
 
-var number = 928,
-    output = [],
-    sNumber = number.toString();
+// var n = 928,
+//     output = [],
+//     sum = 0;
 
 
-function sumToOne(number){
-  for (var i = 0, len = sNumber.length; i < len; i += 1) {
-    output.push(+sNumber.charAt(i));
+// function sumToOne(n){
+//   for (var i = 0; i < arr.length; i++) {
+//     output.push(+arr.charAt(i));
+//   }
+//   for (var j = 0; j < output.length; sum += output[j++]);
+//   console.log(sum);
+//  }
+
+// sumToOne(n);
+
+
+
+function sumToOne(n) {
+  var arr = [];
+  var sum = 0;
+  for ( var i = 0; i < n.length; i++) {
+    arr.push(n.charAt(i));
   }
-  for (var i = 0, sum = 0; i < output.length; sum += output[i++]);
+  for (var j=0; j < arr.length; j ++) {
+    
+    var newNum = parseint();
+    sum += arr[j];
+  }
   console.log(sum);
+  // var num = n.split('');
+
 }
 
-
-sumToOne(number);
+sumToOne('928');

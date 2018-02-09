@@ -1,4 +1,4 @@
-var total = 117;
+var total = 97;
 
 var coinChange = function(total) {
   var quarters = 0;
@@ -11,9 +11,8 @@ var coinChange = function(total) {
   if (total >= 25) {
     quarters = Math.floor(total / 25); // 3
     remainder = total - quarters * 25;
-
   } else if (total == 25) {
-    // console.log(quarters + 1);
+    console.log(quarters + 1);
   }
 
   // dimes

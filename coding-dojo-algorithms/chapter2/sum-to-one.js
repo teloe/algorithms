@@ -23,7 +23,7 @@ var sumToOne = function(n) {
   for (var x = 0; x < newerNum.length; x++) {
     var newerNum = sum += +newerNum[x];
   }
-  return newerNum;
+  console.log(newerNum);
 };
 
 sumToOne(n);

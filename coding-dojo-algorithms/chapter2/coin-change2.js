@@ -1,4 +1,4 @@
-var total = 97;
+var total = 90;
 
 var coinChange = function(total) {
   var quarters = 0;

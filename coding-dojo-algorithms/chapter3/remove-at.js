@@ -3,17 +3,13 @@
 // Think of popFront(arr) as equivalent to removeAt(arr,0) .
 
 var a = [1, 2, 3, 4, 5, 6];
-var i = a[1];
-var j = a[a.length - 1];
+    i = 2;
 
 var remove = function(a, i) {
-  // console.log(j);
-  if (i !== j) {
-    var temp = i;
-    i = j;
-    console.log(a);
-  }
-  console.log(a);
+  var temp = a[i];
+  a[i] = a[a.length - 1];
+  a[a.length - 1] = temp;
+  a.pop();
 };
 
 remove(a, i);

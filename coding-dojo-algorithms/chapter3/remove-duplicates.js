@@ -4,15 +4,16 @@
 // Because array elements are already in order, all duplicate values will be grouped together. 
 // As with all these array challenges, do this without using any built-in array methods.
 
-var arr = [1, 1, 2, 3];
+var a = [1, 1, 1, 1, 1, 2, 2, 3];
 
-var removeDuplicates = function(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] == arr[i + 1]) {
-      
+var removeDuplicates = function(a) {
+  var newArray = [];
+  for (var i = 0; i < a.length; i++) {
+    if (a[i] !== a[i + 1]) {
+      newArray.push(a[i]);
     }
   }
-  console.log(arr);
+  console.log(newArray);
 };
 
-removeDuplicates(arr); // returns [1, 2, 3]
+removeDuplicates(a); // returns [1, 2, 3]

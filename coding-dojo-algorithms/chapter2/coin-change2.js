@@ -1,42 +1,36 @@
-var total = 90;
+var cents = 97;
 
-var coinChange = function(total) {
-  var quarters = 0;
-  var dimes = 0;
-  var nickels = 0;
-  var pennies = 0;
-  var remainder;
-  
-  // quarters
-  if (total >= 25) {
-    quarters = Math.floor(total / 25); // 3
-    remainder = total - quarters * 25;
-  } else if (total == 25) {
-    console.log(quarters + 1);
-  }
+var coinGenerator = function(cents) {
+  var quarters, dimes, nickels, pennies, remainder;
 
-  // dimes
-  if (remainder >= 10) {
-    dimes = Math.floor(remainder / 10); // 1
-    remainder = remainder - dimes * 10; //5
-  } else if (total == 10) {
-    console.log(dimes + 1);
+  if (cents >= 25 && cents / 25 !== 0) {
+    quarters = Math.floor(cents / 25);
+    remainder = cents - quarters * 25;
+    console.log(remainder)
+    // cents = cents - remainder;
+  } else {
+    // remainder = cents;
+    // console.log(remainder)
+    // quarter = 0;
   }
-  
-  // nickels
-  if (remainder >= 5) {
+  if (remainder >= 10 && remainder / 10 !== 0) {
+    dimes = Math.floor(remainder / 10);
+    remainder = remainder - dimes * 10;
+    // remainder = remainder - remainder;
+
+    // console.log(cents)
+  } else {
+    dimes = 0;
+  }
+  if (remainder >= 5 && remainder / 5 !== 0) {
     nickels = Math.floor(remainder / 5);
-    remainder = remainder - nickels * 5;
-  } else if (total == 5) {
-    console.log(nickels + 1);
+    remainder = remainder % 5;
+    // remainder = remainder - remainder;
+  } else {
+    nickels = 0;
   }
-
-  // pennies
-  if (remainder < 5) {
-    pennies += remainder;
-  }
-  
+  pennies = remainder;
   console.log(quarters, dimes, nickels, pennies);
 };
 
-coinChange(total);
+coinGenerator(cents);

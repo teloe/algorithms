@@ -11,7 +11,7 @@
 // pennies:4 
 
 
-var cents = 94;
+var cents = 90;
 
 var coinChange = function(cents) {
   var quarters = 0;

@@ -6,8 +6,6 @@ var coinGenerator = function(cents) {
   if (cents >= 25 && cents / 25 !== 0) {
     quarters = Math.floor(cents / 25);
     remainder = cents - quarters * 25;
-    console.log(remainder)
-    // cents = cents - remainder;
   } else {
     // remainder = cents;
     // console.log(remainder)

@@ -14,11 +14,11 @@
 var cents = 90;
 
 var coinChange = function(cents) {
-  var quarters = 0;
-  var dimes = 0;
-  var nickels = 0;
-  var pennies = 0;
-  var remainder;
+  var quarters = 0,
+      dimes = 0,
+      nickels = 0,
+      pennies = 0,
+      remainder;
   
   // quarters
   if (cents >= 25) {

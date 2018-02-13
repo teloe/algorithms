@@ -8,6 +8,8 @@
  * @return {number}
  */
 
+// using while loop
+
 var removeElement = function(nums, val) {
   var i = 0;
   var j = nums.length-1;
@@ -25,3 +27,19 @@ var removeElement = function(nums, val) {
 };
 
 removeElement([3, 2, 2, 3], 3); // returns length 2
+
+
+// using for loop approach
+
+var removeElement = function(nums, val) {
+  var i = 0;
+  for (var j = 0; j < nums.length; j++) {
+    if (nums[j] !== val) {
+      nums[i] = nums[j];
+      i++;
+    }
+  }
+  return i;
+};
+
+removeElement([3, 2, 2, 3], 3);

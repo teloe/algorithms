@@ -4,17 +4,23 @@
 
 /* jshint esversion: 6 */
 
-let a = [2, 3, 1, 4, 5, 6]; // return [1, 2, 3, 4, 5, 6]
+let a = [2, 3, 1, 4, 5, 6]; // need to return [1, 2, 3, 4, 5, 6]
 
 let minToFront = (a) => {
   let min = a[0];
-  for (var i = 0; i < a.length; i++) {
+  let newArr = [];
+  for (let i = 0; i < a.length; i++) {
     if (min > a[i]) {
       min = a[i];
     } 
   }
-  a.push();
-  console.log(a);
-}
+  newArr.push(min);
+  for (let j = 0; j < a.length; j++) {
+    if (a[j] !== min) {
+      newArr.push(a[j]);
+    }
+  }
+  return newArr;
+};
 
-minToFront(a);
+console.log(minToFront(a));

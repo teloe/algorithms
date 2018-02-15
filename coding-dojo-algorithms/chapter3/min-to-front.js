@@ -23,4 +23,4 @@ let minToFront = (a) => {
   return newArr;
 };
 
-console.log(minToFront(a));
+minToFront(a);

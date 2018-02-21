@@ -5,13 +5,12 @@ var arr = [1, 2, 3, 4, 5];
 
 
 function reverse(arr) {
-  var j = arr.length - 1 - i;
   for ( var i = 0; i < arr.length - 1 - i; i++) {
     var temp = arr[i];
     arr[i] = arr[arr.length - 1 - i];
     arr[arr.length - 1 - i] = temp;
   }
-  return arr;
+  console.log(arr);
 }
 
 reverse(arr);

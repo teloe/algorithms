@@ -12,7 +12,7 @@ function rotateArr(a, val) {
     if (val === 0) {
       return a;
     } else if (val >= 1) {
-      a[i] = a
+      a[i] = a;
     }
   }
   console.log(a);

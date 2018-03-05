@@ -5,7 +5,7 @@ function getDigits(str) {
   var arr = [], x = str.split('');
   for (var i = 0; i < arr.length; i++) {
     if (typeof arr[i] == "number") {
-      arr.push(arr[i]);
+      arr.push(i);
     }
   }
   console.log(arr);

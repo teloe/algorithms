@@ -1,4 +1,3 @@
-
 // Remove array duplicates. Do not alter original. 
 // Return new array with results ‘stable’ (original order). 
 // For [1,2,1,3,4,2] return [1,2,3,4] .
@@ -6,17 +5,18 @@
 
 function removeDuplicates(arr) {
   var newArr = [];
-      //duplicate = false;
+  var duplicate = false;
   for (var i = 0; i < arr.length; i++) {
     for (var j = 0; j < arr.length; j++) {
       if (arr[i] == newArr[j]) {
-        //duplicate = true;
+        duplicate = true;
         break;
-      }
-    } else {
+      }  
+    }
+    if (duplicate == false) {
       newArr.push(arr[i]);
     }
-    //duplicate = false;
+    duplicate = false;
   }
   return newArr;
 }

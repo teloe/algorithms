@@ -1,6 +1,6 @@
 /*
 Given an array and a value, return the two indices of the values whose sum equals the value.
-Example: arr = [1, 1, 2], val = 2, return [0, 1]
+Example: arr = [1, 1, 4], val = 2, return [0, 1]
 */
 function findSum(arr, val) {
   var newArr = [];

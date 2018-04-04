@@ -1,7 +1,8 @@
 /*
-Given an array and a value, return the two indices of the values whose sum equals the value.
-Example: arr = [1, 1, 4], val = 2, return [0, 1]
+Given an array and a value, return the indices of the values whose sum equals the value. 
+Example [1, 1, 3], val = 2, return [0, 1]. 
 */
+
 function findSum(arr, val) {
   var newArr = [];
   for (var i = 0; i < arr.length; i++) {
@@ -20,4 +21,4 @@ function findSum(arr, val) {
 
 var arr1 = [1, 2, 3, 4, 5];
 var val1 = 8;
-console.log(findSum(arr1, val1)); // [2, 4] 
+console.log(findSum(arr1, val1)); // [2, 4]

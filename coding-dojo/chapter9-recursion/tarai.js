@@ -20,5 +20,4 @@ var tarai = function(x, y, z) {
   }
 };
 
-
 console.log(tarai(10, 2, 9)); // 9

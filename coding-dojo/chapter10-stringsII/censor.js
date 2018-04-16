@@ -6,11 +6,15 @@
  */
 
 function censor(str, arr) {
-  if (arr.indexOf(str) > -1 ) {
-    return true;
-  } else {
-    return false;
+  var newStr = str.split(' ');
+  for (var i = 0; i < arr.length; i++) {
+    var substr = arr[i]; 
+    if (str.indexOf(substr)) {
+      console.log(newStr);
+      newStr.push('x');
+    } 
   }
+  return newStr;
 }
 
 var str = "Snap crackle pop nincompoop!", arr = ["crack", "poop"];

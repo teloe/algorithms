@@ -5,16 +5,11 @@
  * nincomxxxx!""])
  */
 
+
 function censor(str, arr) {
-  var newStr = str.split(' ');
   for (var i = 0; i < arr.length; i++) {
-    var substr = arr[i]; 
-    if (str.indexOf(substr)) {
-      console.log(newStr);
-      newStr.push('x');
-    } 
   }
-  return newStr;
+  return str;
 }
 
 var str = "Snap crackle pop nincompoop!", arr = ["crack", "poop"];

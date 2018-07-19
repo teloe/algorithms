@@ -6,11 +6,44 @@
  */
 
 
-function censor(str, arr) {
+var str = "Snap crackle pop nincompoop!"; 
+arr = ["crack", "poop"];
+
+var newStr = [];
+
+// if (str.indexOf(arr[0]) > -1) {
+//   console.log("yes");
+// }
+
+
+/*
+ * 1. loop through arr
+ * 2. compare using indexOf
+ * 3. push 'x' of arr[i].length into newStr
+ */
+
+
+function badWords(str, arr) {
   for (var i = 0; i < arr.length; i++) {
+    if (str.indexOf(arr[i]) > -1) {
+      newStr.push('x' * arr[i].length);
+    }
   }
-  return str;
+  console.log(newStr);
 }
 
-var str = "Snap crackle pop nincompoop!", arr = ["crack", "poop"];
-console.log(censor(str, arr)); // "Snap xxxxxle pop nincomxxxx!"
+badWords(str, arr);
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+

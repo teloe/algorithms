@@ -12,8 +12,10 @@ function plusMinus(arr) {
       n++;
     }
   }
-  return [p/num, n/num, z/num];
+  console.log(p/num); // 0.5
+  console.log(n/num); // 0.33333333
+  console.log(z/num); // 0.16666666
 }
 
-var arr = [-4, 3, -9, 0, 4, 1];
-console.log(plusMinus(arr)); // [ 0.5, 0.3333333333333333, 0.16666666666666666 ] 
+var arr = [-4, 3, -9, 0, 4, 1], num = 6;
+plusMinus(arr);

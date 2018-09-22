@@ -4,8 +4,13 @@
  *
  */
 
-const countApplesAndOranges = s, t, a, b, apples, oranges => {
+const countApplesAndOranges = (s, t, a, b, apples, oranges) => {
+  let appleCount = apples.filter(val => val + a >= s && val + a <= t).length;
+  let orangeCount = orange.filter(val => val + b >= s && val + b <= t).length; 
 
+  console.log(appleCount);
+  console.log(orangeCount);
 }
 
+let s = 7, t = 11, a = 5, b = 15, apples = 3, oranges = 2;
 countApplesAndOranges(s, t, a, b, apples, oranges);

@@ -24,9 +24,9 @@ const kangaroo = (x1, v1, x2, v2) => {
   }
 }
 
-let x1 = 0,
-    v1 = 3,
-    x2 = 4,
+let x1 = 1,
+    v1 = 2,
+    x2 = 0,
     v2 = 2;
 
 kangaroo(x1, v1, x2, v2); // NO

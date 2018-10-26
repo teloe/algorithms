@@ -1,4 +1,4 @@
-/*
+/**
  * Alice and Bob each created one problem for HackerRank. A reviewer rates the
  * two challenges, awarding points on a scale from  to  for three categories:
  * problem clarity, originality, and difficulty.
@@ -18,19 +18,23 @@
  * comparison points?
  */
 
-function solve(){
-  var a = [5, 6, 7];
-      b = [3, 6, 10];
-      alice = 0;
-      bob = 0;
-  for (var i = 0; i < a.length; i++) {
+function compareTriplets(a, b) {
+  let newArr = [];
+      aCount = 0;
+      bCount = 0;
+  for (let i = 0; i < a.length; i++) {
     if (a[i] > b[i]) {
-      alice += 1;
+      aCount++;
     } else if (a[i] < b[i]) {
-      bob += 1;
+      bCount++;
+    } else {
+      pass;
     }
   }
-  return [alice, bob];
+  newArr.push(aCount, bCount);
+  return newArr;
 }
 
-console.log(solve());
+let a = [17, 28, 30];
+    b = [99, 16, 8];
+console.log(compareTriplets(a, b)); // [2, 1]

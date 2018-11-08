@@ -16,12 +16,12 @@ function breakingRecords(s) {
     for(let i = 1; i < s.length; i++) {
       let points = s[i];
       if(points > mostPoints) {
-          mostPoints = points;
-          mostPointsBreak++;
+        mostPoints = points;
+        mostPointsBreak++;
       }
       if(points < leastPoints) {
-          leastPoints = points;
-          leastPointsBreak++;
+        leastPoints = points;
+        leastPointsBreak++;
       }
     }
   console.log(mostPointsBreak + ' ' + leastPointsBreak);

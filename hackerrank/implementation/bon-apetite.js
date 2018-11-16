@@ -11,8 +11,8 @@
  */
 
 function bonApetite(bill, k, b) {
-  let sum = bill.reduce((i, j) => i + j, 0);
-  let costPerPerson = (sum - bill[k]) / 2;
+  const sum = bill.reduce((i, j) => i + j, 0);
+  const costPerPerson = (sum - bill[k]) / 2;
   return (costPerPerson === b) ? "Bon Apetite!" : b - costPerPerson;
 }
 

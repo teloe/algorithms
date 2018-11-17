@@ -10,11 +10,11 @@
  * he should refund  to Anna.
  */
 
-function bonApetite(bill, k, b) {
+function bonAppetit(bill, k, b) {
   const sum = bill.reduce((i, j) => i + j, 0);
   const costPerPerson = (sum - bill[k]) / 2;
-  return (costPerPerson === b) ? "Bon Apetite!" : b - costPerPerson;
+  return (costPerPerson === b) ? "Bon Appetit!" : b - costPerPerson;
 }
 
-console.log(bonApetite([3, 10, 2, 9], 1, 12)); // 5
-console.log(bonApetite([3, 10, 2, 9], 1, 7)); // "Bon Apetite!"
+console.log(bonAppetit([3, 10, 2, 9], 1, 12)); // 5
+console.log(bonAppetit([3, 10, 2, 9], 1, 7)); // "Bon Appetit!"

@@ -14,22 +14,11 @@
  */
 
 function pageCount(n, p) {
-  if (p === n || p === 1) {
-    return 0;
-  }
-  else if (p === 2 || p === 3)  {
-    return 1;
-  }
-  else if (n % 2 === 0) {
-    if (p === (n - 1) || p === (n - 2)) return 1;
-  }
-  else if (n % 2 !== 0) {
-    if (p === (n - 1)) return 0;
-  }
-  else if (p < (n / 2)) {
-    return Math.floor(p / 2);
-  } 
+  let leftStart = Math.floor(p / 2),
+      rightStart = Math.floor(n / 2) - leftStart;
+  return leftStart > rightStart ? rightStart : leftStart;    
 }
 
 console.log(pageCount(6, 2)); // 1
 console.log(pageCount(5, 4)); // 0
+console.log(pageCount(18183, 18042)); // 70

@@ -11,11 +11,7 @@
 function utopianTree(n) {
   let currentHeight = 1;
   for (let i = 1; i <= n; i++) {
-    if (currentHeight % 2 !== 0) {
-      currentHeight *= 2;
-    } else {
-      currentHeight += 1;
-    }
+    currentHeight % 2 !== 0 ? currentHeight *= 2 : currentHeight += 1;
   }
   return currentHeight;
 }

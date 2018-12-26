@@ -9,9 +9,6 @@
  */
 
 function saveThePrisoner(n, m, s) {
-  // starting at seat, s and counting up to m
-  // if chair reaches n prisoners, then reset count back to seat 1 and continue to count
-  // once count reaches m, end and return
   let count = ((m % n) + s) - 1;
   return count;
 }

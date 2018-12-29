@@ -19,7 +19,7 @@ function funnyString(s) {
   for (let i = 0; i < newArr.length - 1; i++) {
     sumsArr.push(Math.abs(newArr[i] - newArr[i+1]));
   }
-  return sumsArr.join('') === sumsArr.reverse().join('') ? "Funny" : "Not Funny";
+  return sumsArr.join('') === sumsArr.reverse().join('') ? 'Funny' : 'Not Funny';
 }
 
 console.log(funnyString('acxz')); // Funny

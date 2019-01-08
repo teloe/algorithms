@@ -9,12 +9,13 @@
  */
 
 function theLoveLetterMystery(s) {
+  let r = s.split('').reverse().join('');
   let count = 0;
-  for (let i = 0, j = s.length - 1; i < s.length; i++, j--) {
-    if (i >= j) {
-      break;
-    }
-    count += Math.abs(s.charCodeAt(i) - s.charCodeAt(j));
+  for (let i = 0; i < s.length; i++) {
+    // if (i >= j) {
+    //   break;
+    // }
+    count += Math.abs(s.charCodeAt(i) - r.charCodeAt(i)) / 2;
   }
   return count;
 }

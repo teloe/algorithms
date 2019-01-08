@@ -1,9 +1,11 @@
-## algorithms 
+# Algorithms
 
-algorithms for practice
+Solutions to various algorithms
 
-resources: 
-* [Coding Dojo](http://www.codingdojo.com/) (the immersive bootcamp that I attended)
-* [Leetcode](https://leetcode.com/problemset/algorithms/)
+![link](https://img.shields.io/badge/Problems%20Solved-141-brightgreen.svg)
+![link](https://img.shields.io/badge/Languages-JavaScript/Python/Ruby-blue.svg)
+
+Resources: 
 * [HackerRank](https://www.hackerrank.com/)
-
+* [Leetcode](https://leetcode.com/problemset/algorithms/)
+* [Coding Dojo](http://www.codingdojo.com/)

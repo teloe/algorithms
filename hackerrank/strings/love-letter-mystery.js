@@ -14,7 +14,7 @@ function theLoveLetterMystery(s) {
     if (i >= j) {
       break;
     }
-    count += Math.abs(s[i].charCodeAt(0) - s[j].charCodeAt(0));
+    count += Math.abs(s.charCodeAt(i) - s.charCodeAt(j));
   }
   return count;
 }
